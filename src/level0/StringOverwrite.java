@@ -1,6 +1,5 @@
 package level0;
 
-import java.util.Scanner;
 
 public class StringOverwrite {
 	public String solution(String my_string, String overwrite_string, int s) {
