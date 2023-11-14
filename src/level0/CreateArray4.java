@@ -7,10 +7,14 @@ public class CreateArray4 {
 	public int[] solution(int[] arr) {
 		
 		ArrayList<Integer> result = new ArrayList<Integer>();
-		for (int i = 0; i < arr.length; i++) {
-			if (result.isEmpty() || result.get(result.size()-1) < arr[i]) {
+		for (int i = 0; i < arr.length;) {
+			if (result.isEmpty() || result.size() == 0) {
 				result.add(arr[i]);
-			} else if(result.get(result.size()-1) >= arr[i] ) {
+				i++;
+			} else if(result.get(result.size()-1) < arr[i]) {
+				result.add(arr[i]);
+				i++;
+			} else {
 				result.remove(result.size()-1);
 			}
 		}
@@ -23,8 +27,8 @@ public class CreateArray4 {
 	}
 
 	public static void main(String[] args) {
-		 CreateArray4 ca = new CreateArray4();
-		    int[] arr = { 1, 4, 2, 5, 3 };
-		    System.out.println(Arrays.toString(ca.solution(arr)));
+		CreateArray4 ca = new CreateArray4();
+		int[] result = { 1, 4, 2, 5, 3 };
+		System.out.println(Arrays.toString(ca.solution(result)));
 	}
 }
