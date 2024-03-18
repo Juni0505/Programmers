@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HateEnglish {
-	public int solution(String numbers) {
+	public long solution(String numbers) {
         String[] numberWords = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         Map<String, Integer> numberMap = new HashMap<>();
         
@@ -24,6 +24,6 @@ public class HateEnglish {
             }
         }
         
-        return Integer.parseInt(sb.toString());
+        return Long.parseLong(sb.toString());
     }
 }
