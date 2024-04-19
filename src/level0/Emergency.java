@@ -1,6 +1,5 @@
 package level0;
 
-import java.util.Arrays;
 
 public class Emergency {
 	public int[] solution(int[] emergency) {
