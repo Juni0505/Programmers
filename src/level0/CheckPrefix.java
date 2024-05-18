@@ -1,0 +1,11 @@
+package level0;
+
+public class CheckPrefix {
+	public int solution(String my_string, String is_prefix) {
+		if (my_string.startsWith(is_prefix)) {
+			return 1; 
+		} else {
+			return 0; 
+		}
+	}
+}
